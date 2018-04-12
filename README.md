@@ -16,7 +16,7 @@ Rizoiu, M.-A., Graham, T., Zhang, R., Zhang, Y., Ackland, R., & Xie, L. (2018). 
 **Bibtex**
 ```
 @article{rizoiu2018debatenight,
-  title={\# DebateNight: The Role and Influence of Socialbots on Twitter During the 1st US Presidential Debate},
+  title={#DebateNight: The Role and Influence of Socialbots on Twitter During the 1st US Presidential Debate},
   author={Rizoiu, Marian-Andrei and Graham, Timothy and Zhang, Rui and Zhang, Yifei and Ackland, Robert and Xie, Lexing},
   journal={arXiv preprint arXiv:1802.09808},
   year={2018}
@@ -88,11 +88,7 @@ We need to first load all required packages of cascade influence.
 ```python
 cd scripts
 ```
-
-    /Users/yifei/Desktop/cascade-influence/scripts
-
-
-
+   
 ```python
 import pandas as pd
 import numpy as np
@@ -114,19 +110,6 @@ cascade.head()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -199,10 +182,6 @@ Now, we add the computed user influence back to the pandas data structure.
 
 ```python
 cascade["influence"] = pd.Series(inf)
-```
-
-
-```python
 cascade.head()
 ```
 
@@ -210,19 +189,6 @@ cascade.head()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -282,10 +248,6 @@ The function *casIn()* compute influence in one cascade, which basically contain
 
 ```python
 from casIn.user_influence import casIn
-```
-
-
-```python
 influence = casIn(cascade_path="../data/SMH/SMH-cascade-0.csv",time_decay=-0.000068)
 influence.head()
 ```
@@ -294,19 +256,6 @@ influence.head()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -381,10 +330,6 @@ We compute the user influence as follows:
 
 ```python
 result = cascades.groupby("user_id").agg({"influence" : "mean"})
-```
-
-
-```python
 result.sort_values("influence",ascending=False).head()
 ```
 
@@ -392,19 +337,6 @@ result.sort_values("influence",ascending=False).head()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
