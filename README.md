@@ -168,7 +168,7 @@ p_ij = P(cascade,r = -0.000068)
 ```
 
 ###  Compute user influence and matrix M
-The function `influence()` will return an array of influences for each user and the matrix ![$M = m_{ij}$]http://latex.codecogs.com/gif.latex?%24M%20%3D%20m_%7Bij%7D%24, where ![$m_{ij}$](http://latex.codecogs.com/gif.latex?%24m_%7Bij%7D%24) is the influence of the ![$i^{th}$](http://latex.codecogs.com/gif.latex?%24i%5E%7Bth%7D%24) tweet of the ![$j^{th}$](http://latex.codecogs.com/gif.latex?%24j%5E%7Bth%7D%24) tweet (direct and indirect).
+The function `influence()` will return an array of influences for each user and the matrix ![$M = m_{ij}$](http://latex.codecogs.com/gif.latex?%24M%20%3D%20m_%7Bij%7D%24), where ![$m_{ij}$](http://latex.codecogs.com/gif.latex?%24m_%7Bij%7D%24) is the influence of the ![$i^{th}$](http://latex.codecogs.com/gif.latex?%24i%5E%7Bth%7D%24) tweet of the ![$j^{th}$](http://latex.codecogs.com/gif.latex?%24j%5E%7Bth%7D%24) tweet (direct and indirect).
 
 
 ```python
