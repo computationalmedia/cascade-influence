@@ -160,9 +160,9 @@ cascade.head()
 
 ###  Compute matrix P
 
-We first need to compute the probabilities $p_{ij}$, where $p_{ij}$ is the probability that $j^{th}$ tweet is a direct retweet of the $i^{th}$ (see the paper for more details).
-We need to specify the hyper-parameter $r$,  the time decay coefficient. 
-Here we choose $r = -0.000068$.
+We first need to compute the probabilities ![$p_{ij}$](http://latex.codecogs.com/gif.latex?%24p_%7Bij%7D%24), where ![$p_{ij}$](http://latex.codecogs.com/gif.latex?%24p_%7Bij%7D%24) is the probability that ![$j^{th}$](http://latex.codecogs.com/gif.latex?%24j%5E%7Bth%7D%24) tweet is a direct retweet of the ![$i^{th}$](http://latex.codecogs.com/gif.latex?%24i%5E%7Bth%7D%24) (see the paper for more details).
+We need to specify the hyper-parameter ![$r$](http://latex.codecogs.com/gif.latex?%24r%24),  the time decay coefficient. 
+Here we choose ![$r = -0.000068$](http://latex.codecogs.com/gif.latex?%24r%20%3D%20-0.000068%24).
 
 
 ```python
@@ -170,7 +170,7 @@ p_ij = P(cascade,r = -0.000068)
 ```
 
 ###  Compute user influence and matrix M
-The function `influence()` will return an array of influences for each user and the matrix $M = m_{ij}$, where $m_{ij}$ is the influence of the $i^{th}$ tweet of the $j^{th}$ tweet (direct and indirect).
+The function `influence()` will return an array of influences for each user and the matrix ![$M = m_{ij}$](http://latex.codecogs.com/gif.latex?%24M%20%3D%20m_%7Bij%7D%24), where ![$m_{ij}$](http://latex.codecogs.com/gif.latex?%24m_%7Bij%7D%24) is the influence of the ![$i^{th}$](http://latex.codecogs.com/gif.latex?%24i%5E%7Bth%7D%24) tweet of the ![$j^{th}$](http://latex.codecogs.com/gif.latex?%24j%5E%7Bth%7D%24) tweet (direct and indirect).
 
 
 ```python
