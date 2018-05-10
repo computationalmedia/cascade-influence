@@ -15,11 +15,13 @@ Rizoiu, M.-A., Graham, T., Zhang, R., Zhang, Y., Ackland, R., & Xie, L. (2018). 
 
 **Bibtex**
 ```
-@article{rizoiu2018debatenight,
-  title={#DebateNight: The Role and Influence of Socialbots on Twitter During the 1st US Presidential Debate},
-  author={Rizoiu, Marian-Andrei and Graham, Timothy and Zhang, Rui and Zhang, Yifei and Ackland, Robert and Xie, Lexing},
-  journal={arXiv preprint arXiv:1802.09808},
-  year={2018}
+@inproceedings{rizoiu2018debatenight,
+    address = {Stanford, CA, USA},
+    author = {Rizoiu, Marian-Andrei and Graham, Timothy and Zhang, Rui and Zhang, Yifei and Ackland, Robert and Xie, Lexing},
+    booktitle = {International AAAI Conference on Web and Social Media (ICWSM '18)},
+    title = {{{\#}DebateNight: The Role and Influence of Socialbots on Twitter During the 1st 2016 U.S. Presidential Debate}},
+    url = {https://arxiv.org/abs/1802.09808},
+    year = {2018}
 }
 ```
 
